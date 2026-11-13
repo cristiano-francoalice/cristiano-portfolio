@@ -1,73 +1,296 @@
+
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import ProjectCard from "../components/ProjectCard.astro";
-const projects = [
-  {number:"01",category:"Educação digital",title:"Formação e experiências de aprendizagem",description:"Planejamento e gestão de iniciativas educacionais digitais, conectando conteúdo, tecnologia, equipes e experiência de aprendizagem.",href:"/projetos/educacao-digital/",theme:"education",mark:"E+",label:"Learning"},
-  {number:"02",category:"Qualidade & produto",title:"Qualidade de software e processos",description:"Validação de fluxos de trabalho e jornadas do usuário, com foco em qualidade, usabilidade e melhoria contínua.",href:"/projetos/qualidade-processos/",theme:"quality",mark:"Q.",label:"Quality"},
-  {number:"03",category:"Projeto autoral",title:"Energia Criativa",description:"Uma exploração autoral entre design, cultura do surf e tecnologia para criar experiências de comunicação visual.",href:"/projetos/energia-criativa/",theme:"creative",mark:"EC",label:"Design + Tech"}
-];
 ---
-<BaseLayout>
+
+<BaseLayout
+  title="Cristiano Alice — Produto, Projetos e Inovação"
+  description="Profissional com 13 anos de experiência no Laboratório Bridge/UFSC. Gestão de produtos e projetos digitais, estratégia, design e inovação."
+>
+  <!-- Apresentação principal -->
   <section class="hero">
     <div class="container hero-grid">
       <div>
-        <p class="eyebrow hero-kicker">Portfólio profissional · 2026</p>
-        <h1 class="hero-title">Ideias ganham força quando <em>design, tecnologia</em> e propósito se encontram.</h1>
-        <p class="hero-description">Sou Cristiano Alice. Minha trajetória conecta design de produto, educação digital, qualidade de software e gestão de projetos para transformar necessidades em experiências relevantes.</p>
+        <p class="eyebrow hero-kicker">Cristiano Alice · Portfólio profissional</p>
+
+        <h1 class="hero-title">
+          Produto, projetos e <em>inovação.</em>
+        </h1>
+
+        <p class="hero-description">
+          Conecto design, tecnologia e pessoas para transformar desafios
+          em soluções, processos e experiências de valor.
+        </p>
+
         <div class="hero-actions">
-          <a class="button" href="/projetos/">Explorar projetos <span class="arrow">↗</span></a>
-          <a class="text-link" href="/sobre/">Conhecer minha trajetória <span class="arrow">→</span></a>
+          <a class="button" href="/projetos">
+            Explorar projetos <span class="arrow">↗</span>
+          </a>
+
+          <a class="text-link" href="/sobre">
+            Conheça minha trajetória <span class="arrow">→</span>
+          </a>
         </div>
-        <p class="hero-note">Design de produto · Educação digital · Tecnologia · Inovação</p>
+
+        <p class="hero-note">
+          13 anos de experiência · Design · Tecnologia · Gestão
+        </p>
       </div>
-      <div class="hero-art" aria-label="Monograma CA em composição gráfica editorial">
-        <div class="hero-art-grid"></div><span class="hero-index">CA / 001</span>
+
+      <div class="hero-art">
+        <div class="hero-art-grid"></div>
+        <span class="hero-index">01 / IDENTIDADE</span>
         <div class="hero-monogram">C<span>A</span>.</div>
-        <div class="hero-art-label"><span>Designing what matters</span><span>Florianópolis · Brasil</span></div>
-      </div>
-    </div>
-  </section>
-  <div class="ticker"><div class="container ticker-inner">
-    <span>Design estratégico</span><i class="ticker-dot"></i><span>Educação digital</span><i class="ticker-dot"></i><span>Qualidade & UX</span><i class="ticker-dot"></i><span>Gestão & inovação</span>
-  </div></div>
-  <section class="section" id="sobre">
-    <div class="container">
-      <div class="intro-grid">
-        <div><p class="eyebrow">01 · Visão profissional</p><h2 class="section-title">Conectar pontos. <em>Criar valor.</em></h2></div>
-        <div>
-          <p class="intro-copy">Minha experiência está na interseção entre <strong>pessoas, processos e tecnologia</strong>. Ao longo da trajetória, participei da gestão de iniciativas de educação digital, da organização de equipes e da validação de experiências em produtos e plataformas.</p>
-          <p class="intro-copy">A formação em Design de Produto e o mestrado em Engenharia de Produção e Sistemas ampliam esse olhar: pensar de forma criativa, estruturar soluções e transformar ideias em entregas consistentes.</p>
-          <a class="text-link" href="/sobre/">Mais sobre minha trajetória <span class="arrow">↗</span></a>
+        <div class="hero-art-label">
+          <span>Produto</span>
+          <span>Projetos</span>
+          <span>Inovação</span>
         </div>
       </div>
-      <div class="principles">
-        <article class="principle"><span class="principle-number">01</span><h3>Visão sistêmica</h3><p>Entender necessidades, contextos e relações entre as partes.</p></article>
-        <article class="principle"><span class="principle-number">02</span><h3>Colaboração</h3><p>Mobilizar conhecimentos e pessoas em torno de objetivos comuns.</p></article>
-        <article class="principle"><span class="principle-number">03</span><h3>Melhoria contínua</h3><p>Aprender com o uso, qualificar processos e evoluir soluções.</p></article>
-      </div>
     </div>
   </section>
-  <section class="section projects-section" id="projetos">
+
+  <!-- Destaques profissionais -->
+  <section class="ticker">
+    <div class="container ticker-inner">
+      <span>13 anos de experiência</span>
+      <span class="ticker-dot"></span>
+      <span>Laboratório Bridge / UFSC</span>
+      <span class="ticker-dot"></span>
+      <span>Design de Produto</span>
+      <span class="ticker-dot"></span>
+      <span>Engenharia de Produção e Sistemas</span>
+    </div>
+  </section>
+
+  <!-- Apresentação da trajetória -->
+  <section class="section">
+    <div class="container intro-grid">
+      <div>
+        <p class="eyebrow">01 · Minha trajetória</p>
+        <h2 class="section-title">
+          Experiência que conecta <em>diferentes perspectivas.</em>
+        </h2>
+      </div>
+
+      <div>
+        <div class="intro-copy">
+          <p>
+            Ao longo de <strong>13 anos no Laboratório Bridge,
+            vinculado à UFSC</strong>, construí uma trajetória
+            profissional que integra educação, tecnologia, qualidade,
+            gestão e inovação.
+          </p>
+
+          <p>
+            Atuei na gestão de cursos e equipes, no planejamento de
+            iniciativas educacionais digitais, em ambientes virtuais
+            de aprendizagem e em atividades de qualidade de software
+            e melhoria de processos.
+          </p>
+
+          <p>
+            Minha formação em Design de Produto e meu mestrado em
+            Engenharia de Produção e Sistemas complementam essa
+            experiência, reunindo criatividade, pensamento analítico
+            e visão sistêmica.
+          </p>
+        </div>
+
+        <a class="text-link" href="/sobre">
+          Conheça minha história completa <span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Pilares profissionais -->
+    <div class="container principles">
+      <article class="principle">
+        <span class="principle-number">01</span>
+        <h3>Produto</h3>
+        <p>Visão centrada nas pessoas, compreensão de necessidades
+          e desenvolvimento de soluções relevantes.</p>
+      </article>
+
+      <article class="principle">
+        <span class="principle-number">02</span>
+        <h3>Projetos</h3>
+        <p>Planejamento, organização, colaboração e capacidade
+          de transformar objetivos em entregas.</p>
+      </article>
+
+      <article class="principle">
+        <span class="principle-number">03</span>
+        <h3>Inovação</h3>
+        <p>Conexão entre criatividade, tecnologia e processos
+          para explorar novas possibilidades.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Projetos -->
+  <section class="section projects-section">
     <div class="container">
-      <div class="section-heading"><div><p class="eyebrow">02 · Trabalhos selecionados</p><h2 class="section-title">Projetos que traduzem <em>experiência em prática.</em></h2></div><a class="text-link" href="/projetos/">Ver todos os projetos <span class="arrow">↗</span></a></div>
-      <div class="project-grid">{projects.map((project) => <ProjectCard {...project} />)}</div>
-    </div>
-  </section>
-  <section class="section" id="atuacao">
-    <div class="container expertise-grid">
-      <div><p class="eyebrow">03 · Áreas de atuação</p><h2 class="section-title">Um repertório que combina <em>estratégia e execução.</em></h2><p class="section-intro">Competências construídas na prática, em projetos que envolvem tecnologia, aprendizagem e experiência do usuário.</p></div>
-      <div class="expertise-list">
-        <article class="expertise-item"><span>01</span><div><h3>Gestão de projetos e produtos digitais</h3><p>Planejamento, organização de entregas, acompanhamento e colaboração entre equipes.</p></div></article>
-        <article class="expertise-item"><span>02</span><div><h3>Educação e ambientes digitais</h3><p>Gestão de cursos, experiências de aprendizagem e plataformas como Moodle.</p></div></article>
-        <article class="expertise-item"><span>03</span><div><h3>Qualidade, processos e UX</h3><p>Testes, validação de fluxos, análise de jornadas e melhoria da experiência.</p></div></article>
-        <article class="expertise-item"><span>04</span><div><h3>Design, criatividade e inovação</h3><p>Visão de design aplicada à concepção de soluções e novas possibilidades.</p></div></article>
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">02 · Experiência em prática</p>
+          <h2 class="section-title">
+            Ideias que se transformam em <em>projetos.</em>
+          </h2>
+        </div>
+
+        <a class="text-link" href="/projetos">
+          Ver todos os projetos <span class="arrow">→</span>
+        </a>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-visual project-visual--education">
+            <span class="project-symbol">Ed.</span>
+            <div class="project-visual-label">
+              <span>01</span>
+              <span>Educação digital</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-meta">
+              <span>Educação</span>
+              <span>01</span>
+            </div>
+            <h3>Educação Digital</h3>
+            <p>
+              Gestão de cursos, experiências de aprendizagem e
+              iniciativas de formação em ambientes digitais.
+            </p>
+            <a class="text-link" href="/projetos/educacao-digital">
+              Conhecer projeto <span class="arrow">→</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual project-visual--quality">
+            <span class="project-symbol">QA.</span>
+            <div class="project-visual-label">
+              <span>02</span>
+              <span>Qualidade e processos</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-meta">
+              <span>Tecnologia</span>
+              <span>02</span>
+            </div>
+            <h3>Qualidade e Processos</h3>
+            <p>
+              Qualidade de software, testes de fluxos de trabalho
+              e melhoria da experiência do usuário.
+            </p>
+            <a class="text-link" href="/projetos/qualidade-processos">
+              Conhecer projeto <span class="arrow">→</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual project-visual--creative">
+            <span class="project-symbol">EC.</span>
+            <div class="project-visual-label">
+              <span>03</span>
+              <span>Design e tecnologia</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-meta">
+              <span>Projeto autoral</span>
+              <span>03</span>
+            </div>
+            <h3>Energia Criativa</h3>
+            <p>
+              Um conceito que integra design, tecnologia e cultura
+              do surf em experiências criativas.
+            </p>
+            <a class="text-link" href="/projetos/energia-criativa">
+              Conhecer projeto <span class="arrow">→</span>
+            </a>
+          </div>
+        </article>
       </div>
     </div>
   </section>
-  <section class="contact-band" id="contato">
+
+  <!-- Competências -->
+  <section class="section">
+    <div class="container expertise-grid">
+      <div>
+        <p class="eyebrow">03 · Atuação</p>
+        <h2 class="section-title">
+          Estratégia com capacidade de <em>execução.</em>
+        </h2>
+        <p class="section-intro">
+          Uma visão multidisciplinar para conectar pessoas,
+          tecnologia e objetivos.
+        </p>
+      </div>
+
+      <div class="expertise-list">
+        <article class="expertise-item">
+          <span>01</span>
+          <div>
+            <h3>Gestão de produtos e projetos digitais</h3>
+            <p>Organização de iniciativas, visão de produto e
+              condução de projetos multidisciplinares.</p>
+          </div>
+        </article>
+
+        <article class="expertise-item">
+          <span>02</span>
+          <div>
+            <h3>Educação e tecnologia</h3>
+            <p>Planejamento educacional, ambientes virtuais
+              e experiências digitais de aprendizagem.</p>
+          </div>
+        </article>
+
+        <article class="expertise-item">
+          <span>03</span>
+          <div>
+            <h3>Qualidade e processos</h3>
+            <p>QA, análise de fluxos de trabalho,
+              experiência do usuário e melhoria contínua.</p>
+          </div>
+        </article>
+
+        <article class="expertise-item">
+          <span>04</span>
+          <div>
+            <h3>Estratégia e inovação</h3>
+            <p>Integração entre criatividade, visão sistêmica
+              e desenvolvimento de novas soluções.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Encerramento -->
+  <section class="contact-band">
     <div class="container contact-grid">
-      <div><p class="eyebrow">04 · Próximas conexões</p><h2 class="section-title">Boas ideias começam com uma <em>boa conversa.</em></h2></div>
-      <div><p class="contact-copy">Este portfólio está em construção. Em breve, esta área reunirá os canais diretos para conversas sobre oportunidades, projetos e colaboração.</p><a class="button button-light" href="https://github.com/cristiano-francoalice" target="_blank" rel="noreferrer">Acompanhar no GitHub <span class="arrow">↗</span></a></div>
+      <div>
+        <p class="eyebrow">04 · Novas possibilidades</p>
+        <h2 class="section-title">
+          Vamos transformar boas ideias em <em>realidade?</em>
+        </h2>
+        <p class="contact-copy">
+          Estou aberto a novas oportunidades, projetos e conexões
+          que aproximem produto, tecnologia e inovação.
+        </p>
+      </div>
+
+      <a class="button button-light" href="/sobre">
+        Vamos conversar <span class="arrow">↗</span>
+      </a>
     </div>
   </section>
 </BaseLayout>

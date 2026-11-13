@@ -1,0 +1,13 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ProjectCard from "../../components/ProjectCard.astro";
+const projects = [
+  {number:"01",category:"Educação digital",title:"Formação e experiências de aprendizagem",description:"Planejamento e gestão de iniciativas educacionais digitais, conectando conteúdo, tecnologia, equipes e experiência de aprendizagem.",href:"/projetos/educacao-digital/",theme:"education",mark:"E+",label:"Learning"},
+  {number:"02",category:"Qualidade & produto",title:"Qualidade de software e processos",description:"Validação de fluxos de trabalho e jornadas do usuário, com foco em qualidade, usabilidade e melhoria contínua.",href:"/projetos/qualidade-processos/",theme:"quality",mark:"Q.",label:"Quality"},
+  {number:"03",category:"Projeto autoral",title:"Energia Criativa",description:"Uma exploração autoral entre design, cultura do surf e tecnologia para criar experiências de comunicação visual.",href:"/projetos/energia-criativa/",theme:"creative",mark:"EC",label:"Design + Tech"}
+];
+---
+<BaseLayout title="Projetos — Cristiano Alice" description="Projetos e experiências selecionadas de Cristiano Alice.">
+  <section class="page-hero"><div class="container"><p class="eyebrow">Projetos selecionados</p><h1>Ideias, processos e <em>experiências em construção.</em></h1><p>Uma seleção de experiências profissionais e iniciativas autorais que mostram diferentes formas de conectar design, educação e tecnologia.</p></div></section>
+  <section class="section projects-section"><div class="container"><div class="project-grid">{projects.map((project) => <ProjectCard {...project} />)}</div></div></section>
+</BaseLayout>
